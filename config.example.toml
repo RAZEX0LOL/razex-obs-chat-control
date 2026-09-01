@@ -1,0 +1,22 @@
+[twitch]
+# Create an application at https://dev.twitch.tv/console.
+client_id = "REPLACE_ME"
+client_secret = "REPLACE_ME"
+# Numeric Twitch user IDs. Use a dedicated account for bot_id.
+bot_id = "123456789"
+owner_id = "987654321"
+# Only these immutable user IDs may control OBS.
+allowed_user_ids = ["987654321"]
+
+[obs]
+# Keep OBS WebSocket on localhost, a private network, or behind an SSH tunnel.
+host = "127.0.0.1"
+port = 4455
+password = "REPLACE_ME_WITH_A_LONG_PASSWORD"
+allowed_scenes = ["Starting Soon", "IRL", "BRB"]
+
+[mediamtx]
+# Optional. Leave blank to disable the source-ready part of !status.
+api_url = "http://127.0.0.1:9997"
+path = "mobile"
+
